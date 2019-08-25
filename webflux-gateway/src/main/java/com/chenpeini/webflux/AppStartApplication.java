@@ -31,7 +31,7 @@ public class AppStartApplication {
         return new TestHandler();
     }
 
-    @Bean
+    //@Bean
     public RouterFunction<ServerResponse> routes() {
         return RouterFunctions.route(RequestPredicates.GET("/route"), testHandler()::echoName);
     }
